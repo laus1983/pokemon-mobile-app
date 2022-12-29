@@ -16,7 +16,7 @@ import useAuth from "../../hooks/useAuth";
 export default function LoginForm() {
   const [error, setError] = useState("");
 
-  const { auth, login, logout } = useAuth();
+  const { login } = useAuth();
 
   const formik = useFormik({
     initialValues: initialValues(),
